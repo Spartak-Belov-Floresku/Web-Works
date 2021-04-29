@@ -1,0 +1,79 @@
+The Hypertext Transfer Protocol that is used by World Wide Web to transfer data between clients and servers.
+The Uniform Resource Locator, the name that is used by the clients to find internet resource.
+The Domain Name System converts IP address of internet resources to human readable domain names.
+The query string allows to insert key=value into URL.
+
+GET - sends data in an open request to the server, mostly integrate as key=value pair in URL
+POST - is mostly used to communicate with the server in hidden format not like as GET. Also, It is used to send sensitive data to the server.
+
+HTTP request is sent by client to the server to request specific data using HTTP format protocol.
+
+HTTP Response is the server’s information as a result of the client’s request. Transferred to the client using HTTP format protocol.
+
+The HTTP headers are used to pass additional information between the clients and the server through the request and response header. 
+Request URL, Cookies, Status Code etc.
+
+URL will convert to IP address by the browser. The browser will send request to that IP address using HTTP format. 
+The server will send response back to the browser using HTTP format. 
+If the response would have additional resourses like imges, CSS, or JavaScript files, the brouser will send request to that resourses too.
+
+*   Trying 172.67.211.64:80...
+* TCP_NODELAY set
+* Connected to icanhazdadjoke.com (172.67.211.64) port 80 (#0)
+> GET / HTTP/1.1
+> Host: icanhazdadjoke.com
+> User-Agent: curl/7.68.0
+> Accept: */*
+>
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 301 Moved Permanently
+< Date: Wed, 28 Apr 2021 23:58:04 GMT
+< Content-Type: text/html; charset=utf-8
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Set-Cookie: __cfduid=d63b82b36248179a8be971e64808f93601619654284; expires=Fri, 28-May-21 23:58:04 GMT; path=/; domain=.icanhazdadjoke.com; HttpOnly; SameSite=Lax
+< Location: https://icanhazdadjoke.com/
+< CF-Cache-Status: DYNAMIC
+< cf-request-id: 09bc842cd50000019156381000000001
+< Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=yLdU8n7LX5oHU2ejRg5QqTd6Wa2qtU6RprhpWLTTc8WeEUKbr6KUa5gpJ0OFXJZUQl1N7LHRNYiROeeHX7lgudFpm3IRF9gjWv93yz9x2fGG1Ok%3D"}],"max_age":604800}
+< NEL: {"max_age":604800,"report_to":"cf-nel"}
+< X-Content-Type-Options: nosniff
+< Server: cloudflare
+< CF-RAY: 64743c8e2b910191-MIA
+< alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+<
+<a href="https://icanhazdadjoke.com/">Moved Permanently</a>.
+* Connection #0 to host icanhazdadjoke.com left intact
+
+
+
+; <<>> DiG 9.16.1-Ubuntu <<>> icanhazdadjoke.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7309
+;; flags: qr rd ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;icanhazdadjoke.com.            IN      A
+
+;; ANSWER SECTION:
+icanhazdadjoke.com.     0       IN      A       172.67.211.64
+icanhazdadjoke.com.     0       IN      A       104.21.37.176
+
+;; Query time: 20 msec
+;; SERVER: 172.24.176.1#53(172.24.176.1)
+;; WHEN: Wed Apr 28 20:00:47 EDT 2021
+;; MSG SIZE  rcvd: 86
+
+
+
+http://localhost:8000/?username=User&password=password
+
+
+Error response
+Error code: 501
+
+Message: Unsupported method ('POST').
+
+Error code explanation: HTTPStatus.NOT_IMPLEMENTED - Server does not support this operation.
